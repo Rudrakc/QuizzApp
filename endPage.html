@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz End</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Quiz Completed!</h1>
+            <div class="final-score-box">
+                <p>Your score is: <span id="final-score">0</span></p>
+            </div>
+            <div class="button-box">
+                <a id="play-button" href="index.html">Home</a>
+                <a id="play-button" href="gamePage.html">Play Again</a>
+            </div>
+        </div>
+    </div>
+    <!-- <lottie-player
+        src="https://lottie.host/6cf88ad2-1a88-42b4-a62d-4fc83fdacea4/Epqnq9YG0q.json"
+        background="transparent"
+        speed="1"
+        id="lottie-animation"
+        direction="1"
+        mode="normal"
+        autoplay
+    ></lottie-player> -->
+    <script>
+      document.getElementById("final-score").innerText =
+        localStorage.getItem("mostRecentScore");
+    </script>
+</body>
+</html>
